@@ -1,0 +1,26 @@
+.card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card-preview {
+  width: 250px;
+  transition: all .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-preview:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.card-popup {
+  width: 250px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+}
