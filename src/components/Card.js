@@ -1,35 +1,56 @@
-import React, {useState} from 'react';
+import React from 'react';
+import Rodal from 'rodal';
 
+import 'rodal/lib/rodal.css';
 import './Card.css';
 
-const Card = ({card}) => {
+class Card extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = { visible: false };
+	}
 
-  const [open, setOpen] = useState(false);
+	show() {
+		this.setState({ visible: true });
+	}
 
-  const toggleCard = () => {
-    setOpen(!open)
-  }
-
-  return (
-    <div className='card-container'>
-      <div
-        className='card-preview'
-        onClick={toggleCard}
-      >
-        <h1>from {card.name}</h1>
-        <img src={card.image} alt='card-illustration' />
-      </div>
-
-      {open ?
-      <div className='card-popup'>
-        <h2>{card.message}</h2>
-        <h4>from {card.name}</h4>
-      </div> :
-      null
-      }
-    </div>
-
-  );
+	hide() {
+		this.setState({ visible: false });
+	}
+	render() {
+		const { card } = this.props;
+		return (
+			<>
+				<div className='card-container' onClick={this.show.bind(this)}>
+					<img src={card.image} alt='card-illustration' />
+				</div>
+				<Rodal
+					visible={this.state.visible}
+					onClose={this.hide.bind(this)}
+					animation='flip'
+					measure='px'
+					width={600}
+					height={500}
+					className='modal'
+				>
+					<div>
+						<h1>{card.message}</h1>
+						{card.url ? (
+							<iframe
+								title='video'
+								width='450'
+								height='300'
+								src={`https://www.youtube.com/embed/${card.url}`}
+								frameborder='0'
+								allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+								allowfullscreen
+							></iframe>
+						) : null}
+					</div>
+				</Rodal>
+			</>
+		);
+	}
 }
 
 export default Card;
