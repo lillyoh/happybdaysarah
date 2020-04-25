@@ -34,18 +34,22 @@ class Card extends React.Component {
 					className='modal'
 				>
 					<div>
-						<h1>{card.message}</h1>
-						{card.url ? (
-							<iframe
-								title='video'
-								width='450'
-								height='300'
-								src={`https://www.youtube.com/embed/${card.url}`}
-								frameborder='0'
-								allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-								allowfullscreen
-							></iframe>
-						) : null}
+						<h1>{card.header}</h1>
+						{card.message ?
+							<div className="message">
+								{card.message}
+							</div> : null}
+						{card.video && !card.youtube ? (
+							<video width={500} controls src={card.video} type="video/mov"></video> ) : null}
+						{card.video && card.youtube ? (
+							<iframe width="500" height="315" src={card.youtube} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						) : null }
+						{card.photo ? (
+							<>
+							<a href={card.photo} target="_blank" rel="noopener noreferrer"><img alt="album-cover" src={card.cover}/></a>
+							</>
+						): null }
+
 					</div>
 				</Rodal>
 			</>

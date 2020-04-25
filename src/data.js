@@ -1,43 +1,59 @@
-import FloatDoodle from './images/FloatDoodle.svg';
-import IceCreamDoodle from './images/IceCreamDoodle.svg';
-import PlantDoodle from './images/PlantDoodle.svg';
-import SwingingDoodle from './images/SwingingDoodle.svg';
-import SprintingDoodle from './images/SprintingDoodle.svg';
-import MeditatingDoodle from './images/MeditatingDoodle.svg';
+import FloatDoodle from './media/FloatDoodle.svg';
+import IceCreamDoodle from './media/IceCreamDoodle.svg';
+import PlantDoodle from './media/PlantDoodle.svg';
+import SwingingDoodle from './media/SwingingDoodle.svg';
+import SprintingDoodle from './media/SprintingDoodle.svg';
+import MeditatingDoodle from './media/MeditatingDoodle.svg';
+import videoMessage from './media/msg.mov';
+import bananaPancakes from './media/bananapancakes2.mov';
+import albumcover from './media/albumcover.png';
+import sarahphoto from './media/sarahphoto.jpg';
 
 const cards = [
 	{
 		name: 'message',
+		header: 'Dear Sarah, happy birthday!',
 		message:
-			'To our amazing sister, we hope you have a great birthday on a truly unique kind of year. Each card on this page has something special inside.',
+			'We\'re wishing you a birthday with lots of love and happy, joyful moments!  We\'ve put together a few to get started 🥳...',
 		image: FloatDoodle,
 	},
 	{
-		name: 'poem',
-		message:
-			'On celebrating life: “Even though everything is impermanent and like a dream, like a rainbow, like a flash of lightning in a summer cloud. It’s ephemera like a bubble in a stream. At the same time it’s also here. You have tomorrow morning’s sunrise, you have fresh cooked eggs and fresh squeezed orange juice. This is the only place where you can eat baked Alaska. The only place where you can pick up a starfish on a beach and toss it back into the ocean. Isn’t that fantastic.” -Jack Kornfield',
+		name: 'quotes',
+		header: 'Look at this star',
+		message: null,
 		image: IceCreamDoodle,
+		photo: true,
+		cover: sarahphoto
 	},
 	{
-		name: 'video',
-		message: 'A special performance, just for you',
+		name: 'vid-song',
+		header: 'A special performance, just for you',
+		message: null,
 		image: PlantDoodle,
-		url: 'ixEOMB6jyEE',
+		video: bananaPancakes
 	},
 	{
 		name: 'vid-message',
-		message: 'Hello from Mom and Dad!',
+		header: 'Hello from Mom and Dad!',
+		message: null,
 		image: SwingingDoodle,
+		video: videoMessage
 	},
 	{
-		name: 'links',
-		message: 'Fun links',
+		name: 'photos',
+		header: 'Childhood gems',
+		message: null,
 		image: MeditatingDoodle,
+		photo: 'https://photos.app.goo.gl/cRngaehrafmCKGEdA',
+		cover: albumcover
 	},
 	{
 		name: 'other',
-		message: 'placeholder',
+		header: 'Enjoy your birthday, Sarah!',
+		message: null,
 		image: SprintingDoodle,
+		video: true,
+		youtube: 'https://www.youtube.com/embed/df8IA9qg6T4'
 	},
 ];
 
