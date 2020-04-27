@@ -12,8 +12,8 @@
 /build
 
 # misc
-/mediaa
-.data.js
+/src/media
+/src/data.js
 .DS_Store
 .env.local
 .env.development.local
