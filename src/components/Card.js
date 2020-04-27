@@ -36,9 +36,9 @@ class Card extends React.Component {
 					<div>
 						<h1>{card.header}</h1>
 						{card.message ?
-							<div className="message">
-								{card.message}
-							</div> : null}
+
+								<p>{card.message}</p>
+						: null}
 						{card.video && !card.youtube ? (
 							<video width={500} controls src={card.video} type="video/mov"></video> ) : null}
 						{card.video && card.youtube ? (

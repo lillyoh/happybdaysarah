@@ -8,12 +8,12 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className='App'>
-				<Confetti recycle={false} />
+				<Confetti recycle={false} numberOfPieces={400}/>
 				<h1>Happy Birthday Sarah!</h1>
 				<div className='card-list'>
 					<CardList />
 				</div>
-				<h1>Love, Tina and Lilly</h1>
+				<h1>Love, your family</h1>
 			</div>
 		);
 	}

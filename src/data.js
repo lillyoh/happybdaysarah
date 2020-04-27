@@ -27,7 +27,7 @@ const cards = [
 	},
 	{
 		name: 'vid-song',
-		header: 'A special performance, just for you',
+		header: 'A special performance from two musicians in NYC (pick-a-song.com)',
 		message: null,
 		image: PlantDoodle,
 		video: bananaPancakes
@@ -42,7 +42,7 @@ const cards = [
 	{
 		name: 'photos',
 		header: 'Childhood gems',
-		message: null,
+		message: 'Click for an album!',
 		image: MeditatingDoodle,
 		photo: 'https://photos.app.goo.gl/cRngaehrafmCKGEdA',
 		cover: albumcover
