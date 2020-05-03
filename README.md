@@ -3,14 +3,15 @@
 This is a website / birthday card I made for my sister, Sarah.
 I had just finished learning React at a coding bootcamp. I wanted to make a fun birthday card for my sister and solidify my understanding of some React concepts in the process.
 
-[Gif](https://imgur.com/XZfagwq.gif)
+![Gif](https://imgur.com/a/UMgAyiV.gif)
 
 ### Features
 
 - Single page application built with React
 - Confetti animation on webpage load
 - React Portals for modal components
-- Personalized video, photo, and text content in modal "cards"
+- Click modal to flip a card
+- Personalized video, photo, and text content in each card
 
 ### Credits
 
