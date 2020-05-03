@@ -3,7 +3,7 @@
 This is a website / birthday card I made for my sister, Sarah.
 I had just finished learning React at a coding bootcamp. I wanted to make a fun birthday card and solidify my understanding of some React concepts in the process.
 
-![Gif](https://i.imgur.com/cP72OV4.mp4)
+![Gif](https://imgur.com/a/OnboTKM.gif)
 
 ### Features
 
