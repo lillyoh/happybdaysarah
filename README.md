@@ -10,7 +10,7 @@ I had just finished learning React at a coding bootcamp. I wanted to make a fun 
 - Single page application built with React
 - Confetti animation on webpage load
 - React Portals for modal components
-- Click modal to flip a card
+- Click a card to flip open
 - Personalized video, photo, and text content in each card
 
 ### Credits
